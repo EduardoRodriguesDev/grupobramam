@@ -1,0 +1,598 @@
+<!DOCTYPE HTML>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Clínica São Mateus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content=""/>
+    <meta name="twitter:image" content=""/>
+    <meta name="twitter:url" content=""/>
+    <meta name="twitter:card" content=""/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/hospital.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css/flexslider.css">
+    <!-- Flaticons  -->
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="//code.jivosite.com/widget.js" jv-id="mNSHTdDUZr" async></script>
+</head>
+<body>
+
+<div class="colorlib-loader"></div>
+
+<div id="page">
+    <nav class="colorlib-nav" role="navigation">
+        <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="top">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div id="colorlib-logo"><a th:href="@{/}"><span>Clínica São Mateus</span></a></div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="num">
+                                        <span class="icon"><i class="icon-phone"></i></span>
+                                        <p><a>(95) 3224-5750</a><br><a>(95) 3626-5999</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="loc">
+                                        <span class="icon"><i class="icon-location"></i></span>
+                                        <p>
+                                            <a href="https://www.google.com.br/maps/place/Cl%C3%ADnica+S%C3%A3o+Mateus/@2.8173741,-60.6846937,17z/data=!3m1!4b1!4m5!3m4!1s0x8d9305da4f65fdfd:0x8849b40c17303b53!8m2!3d2.8173741!4d-60.682505" target="_blank">Av.
+                                                Glaycon de Paiva, Nº 1050, Mecejana, Boa Vista-RR</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="menu-1">
+                                <ul>
+                                    <li class="active"><a th:href="@{/}">Home</a></li>
+                                    <li class="has-dropdown">
+                                        <a>Médicos</a>
+                                        <ul class="dropdown">
+                                            <li><a th:href="@{/joao-fernandes}">Dr. João Fernandes</a></li>
+                                            <li><a th:href="@{/joao}">Dr. Marcel Lacerda</a></li>
+                                            <li><a th:href="@{/joao}">Dr. Júlio Kong</a></li>
+                                            <li><a th:href="@{/joao}">Dr. André Fárias</a></li>
+                                            <li><a th:href="@{/joao}">Dr. Guilherme Bortolon</a></li>
+                                            <li><a th:href="@{/joao}">Dr. Edson Bussad</a></li>
+                                            <li><a th:href="@{/joao}">Dr. Mauro Asato</a></li>
+                                            <li><a th:href="@{/joao}">Dr. Rogério Dias</a></li>
+                                            <li><a th:href="@{/joao}">Dra. Sandra Fernandes</a></li>
+                                            <li><a th:href="@{/joao}">Dra. Jullyene Campos</a></li>
+                                            <li><a th:href="@{/joao}">Dra. Lívia Garcia</a></li>
+                                            <li><a th:href="@{/joao}">Dra. Eugênia Glaucy</a></li>
+                                            <li><a th:href="@{/joao}">Dra. Suzete de Macedo</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a th:href="@{/exames}">Exames</a></li>
+                                    <li><a th:href="@{/procedimentos}">Procedimentos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <aside id="colorlib-hero">
+        <div class="flexslider">
+            <ul class="slides">
+                <li style="background-image: url(images/img_bg_6.jpg);">
+                    <div class="overlay"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-md-pull-2 slider-text">
+                                <div class="slider-text-inner">
+                                    <h1>Sua saúde <strong>é sempre <br>em primeiro lugar</strong></h1>
+                                    <h2>Conte sempre com uma equipe de profissionais bem qualificada.</h2>
+                                    <p><a class="btn btn-primary btn-lg btn-learn" href="#">Make an Appointment</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url(images/img_bg_5.jpg);">
+                    <div class="overlay"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-md-pull-2 slider-text">
+                                <div class="slider-text-inner">
+                                    <h1>Nós te ajudamos <strong>encontrar o melhor médico ao seu redor</strong></h1>
+                                    <h2>Separated they live in Bookmarksgrove right at the coast of the Semantics, a
+                                        large language ocean.</h2>
+                                    <p><a class="btn btn-primary btn-lg btn-learn" href="#">Make an Appointment</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url(images/img_bg_1.jpg);">
+                    <div class="overlay"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-md-pull-2 slider-text">
+                                <div class="slider-text-inner">
+                                    <h1>Medicina <strong>segura &amp;potente</strong> garantida</h1>
+                                    <h2>Separated they live in Bookmarksgrove right at the coast of the Semantics, a
+                                        large language ocean.</h2>
+                                    <p><a class="btn btn-primary btn-lg btn-learn" href="#">Make an Appointment</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url(images/img_bg_2.jpg);">
+                    <div class="overlay"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-md-pull-2 slider-text">
+                                <div class="slider-text-inner">
+                                    <h1>Ajudando a melhorar a <strong>qualidade de vida</strong></h1>
+                                    <h2>Separated they live in Bookmarksgrove right at the coast of the Semantics, a
+                                        large language ocean.</h2>
+                                    <p><a class="btn btn-primary btn-lg btn-learn" href="#">Make an Appointment</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <div id="colorlib-counter" class="colorlib-counters">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-md-push-2 counter-wrap">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 animate-box">
+                            <div class="desc">
+                                <p class="wrap">
+                                    <span class="icon"><i class="flaticon-healthy"></i></span>
+                                    <span class="colorlib-counter js-counter" data-from="0" data-to="3297"
+                                          data-speed="5000" data-refresh-interval="50"></span>
+                                </p>
+                                <span class="colorlib-counter-label">Clientes Satisfeitos</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 animate-box">
+                            <div class="desc">
+                                <p class="wrap">
+                                    <span class="icon"><i class="flaticon-hospital"></i></span>
+                                    <span class="colorlib-counter js-counter" data-from="0" data-to="15"
+                                          data-speed="5000" data-refresh-interval="50"></span>
+                                </p>
+                                <span class="colorlib-counter-label">Consultórios</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 animate-box">
+                            <div class="desc">
+                                <p class="wrap">
+                                    <span class="icon"><i class="flaticon-healthy-1"></i></span>
+                                    <span class="colorlib-counter js-counter" data-from="0" data-to="20"
+                                          data-speed="5000" data-refresh-interval="50"></span>
+                                </p>
+                                <span class="colorlib-counter-label">Médicos</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 animate-box">
+                            <div class="desc">
+                                <p class="wrap">
+                                    <span class="icon"><i class="flaticon-ambulance"></i></span>
+                                    <span class="colorlib-counter js-counter" data-from="0" data-to="30"
+                                          data-speed="5000" data-refresh-interval="50"></span>
+                                </p>
+                                <span class="colorlib-counter-label">Departamentos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="colorlib-services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="services-flex">
+                        <div class="one-fifth no-border-bottom animate-box">
+                            <div class="services">
+								<span class="icon">
+									<i class="flaticon-healthy-1"></i>
+								</span>
+                                <div class="desc">
+                                    <h3><a>Dr. João Fernandes</a></h3>
+                                    <h6 class="especializacao">Urologista</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one-fifth no-border-bottom animate-box">
+                            <div class="services">
+								<span class="icon">
+									<i class="flaticon-healthy"></i>
+								</span>
+                                <div class="desc">
+                                    <h3><a>Dra. Sandra Fernandes</a></h3>
+                                    <h6 class="especializacao">Pediatra</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one-fifth no-border-bottom animate-box">
+                            <div class="services">
+								<span class="icon">
+									<i class="flaticon-healthy-1"></i>
+								</span>
+                                <div class="desc">
+                                    <h3><a>Dr. Marcel Lacerda</a></h3>
+                                    <h6 class="especializacao">Diagnóstico por imagem</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one-fifth no-border-bottom animate-box">
+                            <div class="services">
+								<span class="icon">
+									<i class="flaticon-healthy-1"></i>
+								</span>
+                                <div class="desc">
+                                    <h3><a>Dr. Júlio Kong</a></h3>
+                                    <h6 class="especializacao">Diagnóstico por imagem</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one-fifth no-border-bottom animate-box">
+                            <div class="services">
+								<span class="icon">
+									<i class="flaticon-healthy-1"></i>
+								</span>
+                                <div class="desc">
+                                    <h3><a>Dr. André Fárias</a></h3>
+                                    <h6 class="especializacao">Urologista</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="services-flex">
+                        <div class="one-fifth animate-box">
+                            <div class="services">
+								<span class="icon">
+									<i class="flaticon-healthy-1"></i>
+								</span>
+                                <div class="desc">
+                                    <h3><a href="#">Dr. Guilherme</a></h3>
+                                    <h6 class="especializacao">Angiologista e Cirurgião Vasculhar</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one-fifth animate-box">
+                            <div class="services">
+								<span class="icon">
+									<i class="flaticon-healthy-1"></i>
+								</span>
+                                <div class="desc">
+                                    <h3><a href="#">Dr. Edson Bussad </a></h3>
+                                    <h6 class="especializacao">Clínico Geral</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one-fifth animate-box">
+                            <div class="services">
+								<span class="icon">
+									<i class="flaticon-healthy"></i>
+								</span>
+                                <div class="desc">
+                                    <h3><a href="#">Dr. Jullyene Campos </a></h3>
+                                    <h6 class="especializacao">Dermatologista</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one-fifth animate-box">
+                            <div class="services">
+								<span class="icon">
+									<i class="flaticon-healthy"></i>
+								</span>
+                                <div class="desc">
+                                    <h3><a href="#">Dra. Lívia Garcia </a></h3>
+                                    <h6 class="especializacao">Clínico Geral</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one-fifth animate-box">
+                            <div class="services">
+								<span class="icon">
+									<i class="flaticon-healthy"></i>
+								</span>
+                                <div class="desc">
+                                    <h3><a href="#">Dra. Eugênia Glaucy </a></h3>
+                                    <h6 class="especializacao">Ginecologista</h6>
+                                    <h6 class="especializacao">Obstétrica</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one-fifth animate-box">
+                            <div class="services">
+								<span class="icon">
+									<i class="flaticon-healthy"></i>
+								</span>
+                                <div class="desc">
+                                    <h3><a href="#">Dra. Suzete de Macedo </a></h3>
+                                    <h6 class="especializacao">Ginecologista</h6>
+                                    <h6 class="especializacao">Obstétrica</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one-fifth animate-box">
+                            <div class="services">
+								<span class="icon">
+									<i class="flaticon-healthy-1"></i>
+								</span>
+                                <div class="desc">
+                                    <h3><a href="#">Dr. Mauro Asato </a></h3>
+                                    <h6 class="especializacao">Infectologista</h6>
+                                    <h6 class="especializacao">Medicina de Urgência</h6>
+                                    <h6 class="especializacao">Medicina do Trabalho</h6>
+                                    <h6 class="especializacao">Hematologia</h6>
+                                    <h6 class="especializacao">Hemoterapia</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one-fifth animate-box">
+                            <div class="services">
+								<span class="icon">
+									<i class="flaticon-healthy-1"></i>
+								</span>
+                                <div class="desc">
+                                    <h3><a href="#">Dr. Rogério Dias </a></h3>
+                                    <h6 class="especializacao">Ortopedista</h6>
+                                    <h6 class="especializacao">Traumatologista</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="colorlib-choose">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="choose">
+                    <div class="half features-wrap container">
+                        <div class="features-services animate-box">
+                            <div class="colorlib-heading animate-box">
+                                <h2>Exames e Procedimentos</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="features animate-box">
+                                        <span class="icon text-center"><i class="flaticon-radiation"></i></span>
+                                        <div class="desc">
+                                            <h3>Litotripsia Extracorpórea</h3>
+                                        </div>
+                                    </div>
+                                    <div class="features animate-box">
+                                        <span class="icon text-center"><i class="flaticon-stethoscope"></i></span>
+                                        <div class="desc">
+                                            <h3>Peniscopia</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="features animate-box">
+                                        <span class="icon text-center"><i class="flaticon-medical-1"></i></span>
+                                        <div class="desc">
+                                            <h3>Ultrassonografia Geral</h3>
+                                        </div>
+                                    </div>
+                                    <div class="features animate-box">
+                                        <span class="icon text-center"><i class="flaticon-medical-1"></i></span>
+                                        <div class="desc">
+                                            <h3>Hemograma Completo</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="colorlib-testimonial" class="colorlib-bg-section">
+        <div class="container">
+            <div class="row animate-box">
+                <div class="col-md-12 colorlib-heading">
+                    <h2>O que estão falando sobre nós</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 animate-box">
+                    <div class="owl-carousel">
+                        <div class="item">
+                            <div class="testimony">
+                                <span class="img-user" style="background-image: url(images/boy.png);"></span>
+                                <span class="user">FRANCISCO ALDENIVAN</span>
+                                <blockquote>
+                                    <p>"Muito bom o atendimento, pessoal bem prestativo e educado. Amplo e limpo sala de
+                                        espera muito boa e bem tranqüila. Presta serviço em diversas áreas médica, no
+                                        meu caso pediatra e urologista. Bons médicos. Não tive problema em agendar as
+                                        consultas nem demorou muito o tempo de espera pela consulta. Poderiam melhorar
+                                        atendendo em horário marcado a sim seria um trabalho mas excelente. Mas está
+                                        tudo bem."</p>
+                                    <p class="color"><span><i class="icon-star3"></i></span><span><i
+                                            class="icon-star3"></i></span><span><i
+                                            class="icon-star3"></i></span><span><i
+                                            class="icon-star3"></i></span><span></i></span></p>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony">
+                                <span class="img-user" style="background-image: url(images/boy.png);"></span>
+                                <span class="user">José Luiz</span>
+                                <blockquote>
+                                    <p>"Bom atendimento, organizada e com humanidade e carinho,ajuda os que
+                                        precisam."</p>
+                                    <p class="color"><span><i class="icon-star3"></i></span><span></i></span><span><i
+                                            class="icon-star3"></i></span><span><i
+                                            class="icon-star3"></i></span><span><i class="icon-star3"></i></span></p>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony">
+                                <span class="img-user" style="background-image: url(images/boy.png);"></span>
+                                <span class="user">Felipe Jorge</span>
+                                <blockquote>
+                                    <p>"Excelentes profissionais"</p>
+                                    <p class="color"><span><i class="icon-star3"></i></span><span></i></span><span><i
+                                            class="icon-star3"></i></span><span><i
+                                            class="icon-star3"></i></span><span><i class="icon-star3"></i></span></p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="colorlib-footer" role="contentinfo">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row row-pb-md">
+                <div class="col-md-3 colorlib-widget">
+                    <h3>Endereço</h3>
+                    <ul class="colorlib-footer-links">
+                        <li>Av. Glaycon de Paiva, Nº 1050 <br> Mecejana, Boa Vista-RR</li>
+                        <li><a href="tel://(95)3224-5750"><i class="icon-phone"></i>(95)3224-5750</a></li>
+                        <li><a href="tel://(95)3623-3999"><i class="icon-phone"></i>(95)3623-3999</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 colorlib-widget">
+                    <h3>Especialidades</h3>
+                    <p>
+                    <ul class="colorlib-footer-links">
+                        <li><a href="#">Urologia</a></li>
+                        <li><a href="#">Pediatria</a></li>
+                        <li><a href="#">Clínico Geral</a></li>
+                        <li><a href="#">Dermatologia</a></li>
+                        <li><a href="#">Ortopedia</a></li>
+                        <li><a href="#">Angiologia</a></li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="col-md-4 colorlib-widget">
+                    <h3>Funcionamento</h3>
+                    <p>
+                    <ul class="colorlib-footer-links">
+                        <li>Segunda: 08:00 - 12:00 / 14:00 - 18:00</li>
+                        <li>Terça: 08:00 - 12:00 / 14:00 - 18:00</li>
+                        <li>Quarta: 08:00 - 12:00 / 14:00 - 18:00</li>
+                        <li>Quinta: 08:00 - 12:00 / 14:00 - 18:00</li>
+                        <li>Sexta: 08:00 - 12:00 / 14:00 - 18:00</li>
+                        <li>Sábado: Fechado</li>
+                        <li>Domingo: Fechado</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row copyright">
+            <div class="col-md-12 text-center">
+                <p>
+                    <small class="block">&copy;
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                        All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i>
+                        by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small>
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!--<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>-->
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Stellar Parallax -->
+<script src="js/jquery.stellar.min.js"></script>
+<!-- Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- Flexslider -->
+<script src="js/jquery.flexslider-min.js"></script>
+<!-- countTo -->
+<script src="js/jquery.countTo.js"></script>
+<!-- Magnific Popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+<!-- Sticky Kit -->
+<script src="js/sticky-kit.min.js"></script>
+<!-- Main -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
+

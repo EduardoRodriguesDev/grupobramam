@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Clínica São Mateus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content=""/>
+    <meta name="twitter:image" content=""/>
+    <meta name="twitter:url" content=""/>
+    <meta name="twitter:card" content=""/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/hospital.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css/flexslider.css">
+    <!-- Flaticons  -->
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="//code.jivosite.com/widget.js" jv-id="mNSHTdDUZr" async></script>
+</head>
+<body>
+
+<div class="colorlib-loader"></div>
+
+<div id="page">
+    <nav class="colorlib-nav" role="navigation">
+        <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="top">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div id="colorlib-logo"><a th:href="@{/}"><span>Clínica São Mateus</span></a></div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="num">
+                                        <span class="icon"><i class="icon-phone"></i></span>
+                                        <p><a>(95) 3224-5750</a><br><a>(95) 3626-5999</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="loc">
+                                        <span class="icon"><i class="icon-location"></i></span>
+                                        <p>
+                                            <a href="https://www.google.com.br/maps/place/Cl%C3%ADnica+S%C3%A3o+Mateus/@2.8173741,-60.6846937,17z/data=!3m1!4b1!4m5!3m4!1s0x8d9305da4f65fdfd:0x8849b40c17303b53!8m2!3d2.8173741!4d-60.682505" target="_blank">Av.
+                                                Glaycon de Paiva, Nº 1050, Mecejana, Boa Vista-RR</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="menu-1">
+                                <ul>
+                                    <li><a th:href="@{/}">Home</a></li>
+                                    <li class="has-dropdown">
+                                        <a class="active">Médicos</a>
+                                        <ul class="dropdown">
+                                            <li><a th:href="@{/joao}">Dr. João Fernandes</a></li>
+                                            <li><a th:href="@{/joao}">Dr. Marcel Lacerda</a></li>
+                                            <li><a th:href="@{/joao}">Dr. Júlio Kong</a></li>
+                                            <li><a th:href="@{/joao}">Dr. André Fárias</a></li>
+                                            <li><a th:href="@{/joao}">Dr. Guilherme Bortolon</a></li>
+                                            <li><a th:href="@{/joao}">Dr. Edson Bussad</a></li>
+                                            <li><a th:href="@{/joao}">Dr. Mauro Asato</a></li>
+                                            <li><a th:href="@{/joao}">Dr. Rogério Dias</a></li>
+                                            <li><a th:href="@{/joao}">Dra. Sandra Fernandes</a></li>
+                                            <li><a th:href="@{/joao}">Dra. Jullyene Campos</a></li>
+                                            <li><a th:href="@{/joao}">Dra. Lívia Garcia</a></li>
+                                            <li><a th:href="@{/joao}">Dra. Eugênia Glaucy</a></li>
+                                            <li><a th:href="@{/joao}">Dra. Suzete de Macedo</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a th:href="@{/exames}">Exames</a></li>
+                                    <li><a th:href="@{/procedimentos}">Procedimentos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="colorlib-doctor">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-push-4 image-content">
+                    <div class="doctor animate-box">
+<!--                        <img class="img-responsive doc-img" src="images/staff-3.jpg" alt="">-->
+                        <h2 class="title-medic">Dra. Sandra Fernandes</h2>
+                        <span>Urologista</span>
+                        <div class="desc2">
+                            <blockquote>
+                                <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas,
+                                    wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.
+                                    She packed her seven versalia, put her initial into the belt and made herself on the
+                                    way.</p>
+                            </blockquote>
+                            <h3>Biografia</h3>
+                            <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild
+                                Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed
+                                her seven versalia, put her initial into the belt and made herself on the way. Far far
+                                away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                                live the blind texts far from the countries Vokalia and Consonantia, there live the
+                                blind texts.</p><br>
+                            <h3>Vida Profissional</h3>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia. It is a paradisematic country, in which roasted parts of sentences fly into
+                                your mouth. Even the all-powerful Pointing has no control about the blind texts it is an
+                                almost unorthographic life One day however a small line of blind text by the name of
+                                Lorem Ipsum decided to leave for the far World of Grammar.</p><br>
+                            <h3>Redes sociais</h3>
+                            <ul class="colorlib-social">
+                                <li><a href="#"><i class="icon-facebook2"></i></a></li>
+                                <li><a href="#"><i class="icon-twitter2"></i></a></li>
+                                <li><a href="#"><i class="icon-linkedin2"></i></a></li>
+                                <li><a href="#"><i class="icon-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="container">
+                            <div class="row animate-box">
+                                <div class="col-md-3 col-md-offset-3 text-center colorlib-heading">
+                                    <h4>Servços</h4>
+                                </div>
+                            </div>
+                            <div class="row animate-box">
+                                <div class="col-md-4">
+                                    <ul class="plan">
+                                        <li><span>Consulta Médica</span><span>R$100</span></li>
+                                        <li><span>Breast implants</span><span>R$120</span></li>
+                                        <li><span>Ear pinning</span><span>R$140</span></li>
+                                        <li><span>Breast augmentation</span><span>R$100</span></li>
+                                        <li><span>Eyelid lift</span><span>R$110</span></li>
+                                        <li><span>Face lift</span><span>R$100</span></li>
+                                        <li><span>Tattoo removal</span><span>R$150</span></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="plan">
+                                        <li><span>Cosmetic surgery</span><span>R$100</span></li>
+                                        <li><span>Facial Reconstruction</span><span>R$120</span></li>
+                                        <li><span>Head &amp; neck reconstruction</span><span>R$140</span></li>
+                                        <li><span>Liposuction</span><span>R$100</span></li>
+                                        <li><span>Pediatric plastic surgery</span><span>R$110</span></li>
+                                        <li><span>Skin Care</span><span>R$100</span></li>
+                                        <li><span>Tummy Tuck</span><span>R$150</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-info">
+                            <h2>Contatos</h2>
+                            <p><i class="icon-location4"></i>Av. Glaycon de Paiva, Nº 1050, Mecejana, Boa Vista-RR, Sala - ##</p>
+                            <p><i class="icon-phone-outline"></i> (95)3224-5750</p>
+                            <p><i class="icon-paperplane"></i><a href="#"> youremail@info.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-pull-8 sticky-parent">
+                    <div id="sticky_item">
+                        <h3>Agenda</h3>
+                        <div class="schedule">
+                            <span class="icon"><i class="icon-calendar3"></i></span>
+                            <div class="desc">
+                                <span>Segunda-feira</span>
+                                <span>8:00 - 12:00 / 14:00 - 18:00</span>
+                                <h4>Convênios</h4>
+                            </div>
+                        </div>
+                        <div class="schedule">
+                            <span class="icon"><i class="icon-calendar3"></i></span>
+                            <div class="desc">
+                                <span>Terça-feira</span>
+                                <span>8:00 - 12:00 / 14:00 - 18:00</span>
+                                <h4>Convênios</h4>
+                            </div>
+                        </div>
+                        <div class="schedule">
+                            <span class="icon"><i class="icon-calendar3"></i></span>
+                            <div class="desc">
+                                <span>Quarta-feira</span>
+                                <span>8:00 - 12:00 / 14:00 - 18:00</span>
+                                <h4>Convênios</h4>
+                            </div>
+                        </div>
+                        <div class="schedule">
+                            <span class="icon"><i class="icon-calendar3"></i></span>
+                            <div class="desc">
+                                <span>Quinta-feira</span>
+                                <span>8:00 - 12:00 / 14:00 - 18:00</span>
+                                <h4>Convênios</h4>
+                            </div>
+                        </div>
+                        <div class="schedule">
+                            <span class="icon"><i class="icon-calendar3"></i></span>
+                            <div class="desc">
+                                <span>Sexta-feira</span>
+                                <span>8:00 - 12:00 / 14:00 - 18:00</span>
+                                <h4>Convênios</h4>
+                            </div>
+                        </div>
+                        <p class="btn-big"><a href="appointment.html" class="btn btn-primary">Realizar agendamento</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="colorlib-footer" role="contentinfo">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row row-pb-md">
+                <div class="col-md-3 colorlib-widget">
+                    <h3>Endereço</h3>
+                    <ul class="colorlib-footer-links">
+                        <li>Av. Glaycon de Paiva, Nº 1050 <br> Mecejana, Boa Vista-RR</li>
+                        <li><a href="tel://(95)3224-5750"><i class="icon-phone"></i>(95)3224-5750</a></li>
+                        <li><a href="tel://(95)3623-3999"><i class="icon-phone"></i>(95)3623-3999</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 colorlib-widget">
+                    <h3>Especialidades</h3>
+                    <p>
+                    <ul class="colorlib-footer-links">
+                        <li><a href="#">Urologia</a></li>
+                        <li><a href="#">Pediatria</a></li>
+                        <li><a href="#">Clínico Geral</a></li>
+                        <li><a href="#">Dermatologia</a></li>
+                        <li><a href="#">Ortopedia</a></li>
+                        <li><a href="#">Angiologia</a></li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="col-md-4 colorlib-widget">
+                    <h3>Funcionamento</h3>
+                    <p>
+                    <ul class="colorlib-footer-links">
+                        <li>Segunda: 08:00 - 12:00 / 14:00 - 18:00</li>
+                        <li>Terça: 08:00 - 12:00 / 14:00 - 18:00</li>
+                        <li>Quarta: 08:00 - 12:00 / 14:00 - 18:00</li>
+                        <li>Quinta: 08:00 - 12:00 / 14:00 - 18:00</li>
+                        <li>Sexta: 08:00 - 12:00 / 14:00 - 18:00</li>
+                        <li>Sábado: Fechado</li>
+                        <li>Domingo: Fechado</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row copyright">
+            <div class="col-md-12 text-center">
+                <p>
+                    <small class="block">&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small>
+                </p>
+            </div>
+        </div>
+    </footer></div>
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Stellar Parallax -->
+<script src="js/jquery.stellar.min.js"></script>
+<!-- Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- Flexslider -->
+<script src="js/jquery.flexslider-min.js"></script>
+<!-- countTo -->
+<script src="js/jquery.countTo.js"></script>
+<!-- Magnific Popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+<!-- Sticky Kit -->
+<script src="js/sticky-kit.min.js"></script>
+<!-- Main -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
